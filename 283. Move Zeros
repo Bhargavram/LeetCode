@@ -1,0 +1,17 @@
+class Solution {
+    public void moveZeroes(int[] nums) {
+       int zcnt = 0;
+           if(nums == null || nums.length == 0)
+               return;
+        for(int i=0;i<nums.length;i++){
+           if(nums[i] != 0){
+               nums[zcnt++] = nums[i];
+           }
+            
+        }
+        while(zcnt<nums.length){
+            nums[zcnt++] = 0;
+            
+        }
+    }
+}
